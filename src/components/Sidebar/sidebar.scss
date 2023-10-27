@@ -1,0 +1,49 @@
+@import "../../scss/variables.scss";
+
+.sidebar__wrapper{
+    width: 0px;
+    background-color: $secondary-color;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: $default-transition;
+
+    .sidebar__container{
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            img{
+                width: 110px;
+            }
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 20px;
+            .list-item{
+                display: flex;
+                column-gap: 10px;
+                padding: 8px 10px;
+                color: $text-color;
+                font-size: 16px;
+                text-decoration: none;
+                transition: $default-transition;
+
+                &:hover{
+                    background-color: $primary-color;
+                    color: white;
+                }
+
+                .icon{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+.sidebar__active{
+    width: 200px;
+}

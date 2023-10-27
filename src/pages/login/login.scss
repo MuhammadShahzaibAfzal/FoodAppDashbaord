@@ -1,0 +1,33 @@
+@import "../../scss/variables.scss";
+
+.login__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .login__container {
+    width: 480px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      color: $primary-color;
+    }
+
+    .btn__box{
+        text-align: center;
+        margin-top: 20px;
+    }
+  }
+}
