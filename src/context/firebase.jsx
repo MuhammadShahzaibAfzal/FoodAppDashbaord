@@ -152,7 +152,7 @@ export const FirebaseProvider = (props) => {
     await updateDoc(docRef, updateFields);
   };
 
-  /* ADD NEW CATEGORY */
+  /* ADD NEW PRODUCT*/
   const addNewProduct = async (
     product_title,
     product_price,
